@@ -1,0 +1,211 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/* Reset basic styles for better Bootstrap integration */
+/* Reset basic styles for better Bootstrap integration */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #3830c9;
+    color: #fff;
+    stroke-opacity: 0.5;
+    font-family: 'Roboto', sans-serif;
+    transition: opacity 0.5s ease-in-out;
+    
+    font-size: 10px;
+    line-height: 1.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  body{
+    color: #272c31;
+    
+  }
+  /* Basic navbar styling */
+  nav {
+    height: 110px;
+    background-color: #fffcfc;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-item{
+   text-shadow: 1px 1px 3px  #000000;
+   border-style: solid;
+   border-color: rgb(9, 9, 9);
+   border-width: 2px;
+   padding: 1px 3px 4px;
+   border-radius: 15px;
+   height:55px;
+
+  }
+  
+  .navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    display: blck;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    background-color: #030507;
+    border-radius: 10px;
+    height: 40px;
+  }
+  
+
+  .navbar-toggler {
+    border-color: #130cdd;
+    background-color: #130cdd;
+
+  }
+  
+ 
+  @media (max-width: 752px) {
+    nav li {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+    }
+   
+    
+  
+    nav .navbar-brand img {
+      display: none; 
+    }
+  
+   
+    #navbarNav {
+      transition: max-height 0.3s  ease-in-out 3s;
+      max-height: 0;
+    }
+  
+    .navbar-toggler.collapsed ~ #navbarNav {
+      max-height: 300px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      padding: 10px 20px;
+    
+    }
+    form{
+        width: 90%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    nav li {
+      padding: 5px 10px;
+      background-color: #272c31;
+      height: 3vh;
+      
+    }
+    form{
+      width: 90%;
+    }
+  }
+  
+  
+
+.footer-above {
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #272c31;
+    color: rgb(255, 255, 255);
+    width: 100%;
+
+}
+
+.footer-below {
+    bottom: 0px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #272c31;
+    color: rgb(255, 255, 255);
+    width: 100%;
+
+}
+
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  form {
+  border: 1px 2px 3px  rgb(30, 1, 255) solid;
+  border-style: groove;
+  border-radius: 8px;
+  stroke: 1px 2px red;
+  padding: 8px;
+  width: 100%;
+  }
+  
+ form input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  form input:focus, textarea:focus {
+    border-color: #337ab7;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  form button {
+    margin-top: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #286090;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+ span{
+  color: rgb(231, 13, 13);
+}
+p{
+  color: rgb(0, 0, 0);
+}
